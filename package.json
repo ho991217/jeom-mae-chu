@@ -1,10 +1,13 @@
 {
   "name": "jeom-mae-chu",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "점심 메뉴 추천 해 드립니다.",
   "main": "dist/index.js",
   "author": "이호연 <ho991217@kakao.com>",
+  "bugs": {
+    "url": "https://github.com/ho991217/jeom-mae-chu/issues"
+  },
   "scripts": {
     "prepack": "yarn build",
     "build": "yarn clean && yarn build:tsc && yarn build:js",
@@ -27,6 +30,11 @@
   "files": [
     "dist",
     "src"
+  ],
+  "keywords": [
+    "lunch",
+    "menu",
+    "recommendation"
   ],
   "license": "MIT",
   "devDependencies": {
