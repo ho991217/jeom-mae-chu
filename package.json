@@ -17,9 +17,6 @@
     "type": "git",
     "url": "https://github.com/ho991217/jeom-mae-chu.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
