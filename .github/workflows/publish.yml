@@ -1,0 +1,21 @@
+name: publish
+on:
+  release:
+    types: [created]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+          registry-url: "https://registry.npmjs.org"
+      # 배포를 위한 명령어들
+      - run: npm install
+      - run: npm test
+      - run: npm publish --access public
+
+        # NPM Access 토큰
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
