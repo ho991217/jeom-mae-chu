@@ -4,13 +4,26 @@ function getRandomInteger(length: number) {
   return Math.floor(Math.random() * length);
 }
 
-function getJeomshim(...selectedCategory: Category[]): Food {
-  const jeomshimCategory = selectedCategory.length
-    ? selectedCategory[getRandomInteger(selectedCategory.length)]
-    : category[getRandomInteger(category.length)];
+function getRandomValue(array: Record<string, any> | any) {
+  const length = array.length;
+  return array[getRandomInteger(length)];
+}
 
-  const jeomshim =
-    foods['한식'][getRandomInteger(foods[jeomshimCategory].length)];
+function getJeomshim(selectedCategory?: Category | Category[]): Food {
+  let jeomshimCategory: Category = '한식';
+
+  if (!selectedCategory) {
+    jeomshimCategory = getRandomValue(category);
+  } else if (Array.isArray(selectedCategory)) {
+    const uniqueCategories = Array.from(new Set(selectedCategory));
+
+    jeomshimCategory = getRandomValue(uniqueCategories);
+  } else {
+    jeomshimCategory = selectedCategory;
+  }
+
+  const jeomshimCategoryFoods = foods[jeomshimCategory];
+  const jeomshim = getRandomValue(jeomshimCategoryFoods);
 
   return jeomshim;
 }
