@@ -9,7 +9,7 @@
 - 먹고싶지 않은 카테고리를 제외하고 추천받을 수 있습니다.
 - 타입스크립트 지원
 - Node.js 및 브라우저 환경에서 구동 가능
-- SSR(Server-Side Rendering) 및 RSC(React Server Components) 지원 (예정)
+- SSR(Server-Side Rendering) 및 RSC(React Server Components) 지원
 
 ## 설치 방법
 
@@ -47,8 +47,6 @@ console.log(`오늘의 점심 메뉴는 ${menu}입니다.`); // 오늘의 점심
 ```
 
 ### SSR(Server-Side Rendering) 및 RSC(React Server Components) 환경
-
-- (지원 예정)
 
 ```typescript
 import getJeomshim from 'jeom-mae-chu';
