@@ -6,7 +6,17 @@ type GetJeomshimOptions = {
   exclude?: Category | Category[];
 };
 
-function getJeomshim({ include, exclude }: GetJeomshimOptions): Food | null {
+function getJeomshim(option?: GetJeomshimOptions): Food | null {
+  if (
+    option === undefined ||
+    (option.include === undefined && option.exclude === undefined)
+  ) {
+    const jeomshimCategory = getRandomValue(category) as Category;
+    return getRandomValue(food[jeomshimCategory]);
+  }
+
+  const { include, exclude } = option;
+
   if (include !== undefined && exclude !== undefined) {
     throw new Error('You cannot specify both include and exclude options');
   }
@@ -40,6 +50,7 @@ function getJeomshim({ include, exclude }: GetJeomshimOptions): Food | null {
   } else {
     jeomshimCategory = getRandomValue(category);
   }
+
   const jeomshimCategoryFoods = food[jeomshimCategory];
   const jeomshim = getRandomValue(jeomshimCategoryFoods);
 
