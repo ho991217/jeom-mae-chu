@@ -1,6 +1,5 @@
 # 점심메뉴 추천 라이브러리
-
-이 라이브러리는 매일 점심시간마다 무엇을 먹을지 고민하는 분들을 위해 개발되었습니다. 간단하게 함수 호출 한 번으로 다양한 점심 메뉴 중에서 무작위로 하나를 추천받을 수 있습니다. 타입스크립트를 지원하며, Node.js 및 브라우저 환경뿐만 아니라 SSR(Server-Side Rendering)이나 RSC(React Server Components)에서도 문제없이 구동됩니다.
+[점메추(jeom-mae-chu)](https://www.npmjs.com/package/jeom-mae-chu) 라이브러리는 매일 점심시간마다 무엇을 먹을지 고민하는 분들을 위해 개발되었습니다. 간단하게 함수 호출 한 번으로 다양한 점심 메뉴 중에서 무작위로 하나를 추천받을 수 있습니다. 타입스크립트를 지원하며, Node.js 및 브라우저 환경뿐만 아니라 SSR(Server-Side Rendering)이나 RSC(React Server Components)에서도 문제없이 구동됩니다.
 
 ## 기능
 
