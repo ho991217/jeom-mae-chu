@@ -1,7 +1,7 @@
 {
   "name": "jeom-mae-chu",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "점심 메뉴 추천 해 드립니다.",
   "main": "dist/index.js",
   "author": "이호연 <ho991217@kakao.com>",
