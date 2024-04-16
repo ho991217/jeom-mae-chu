@@ -28,5 +28,8 @@
     "@types/node": "^20.12.7",
     "esbuild": "^0.20.2",
     "typescript": "^5.4.5"
-  }
+  },
+  "contributors": [
+    "이호연 <ho991217@kakao.com>"
+  ]
 }
