@@ -16,13 +16,13 @@
 npm을 사용하여 설치할 수 있습니다:
 
 ```bash
-npm install jeom-mae-choo
+npm install jeom-mae-chu
 ```
 
 또는 yarn을 사용하여 설치할 수 있습니다:
 
 ```bash
-yarn add jeom-mae-choo
+yarn add jeom-mae-chu
 ```
 
 ## 사용 방법
@@ -30,7 +30,7 @@ yarn add jeom-mae-choo
 ### Node.js 환경
 
 ```typescript
-import getJeomshim from 'jeom-mae-choo';
+import getJeomshim from 'jeom-mae-chu';
 
 const menu = getJeomshim();
 console.log(`오늘의 점심 메뉴는 ${menu}입니다.`);
@@ -49,7 +49,7 @@ console.log(`오늘의 점심 메뉴는 ${menu}입니다.`);
 ### SSR(Server-Side Rendering) 및 RSC(React Server Components) 환경
 
 ```typescript
-import getJeomshim from 'jeom-mae-choo';
+import getJeomshim from 'jeom-mae-chu';
 
 export default function MyComponent() {
   const menu = getJeomshim();
