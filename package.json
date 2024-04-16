@@ -1,0 +1,32 @@
+{
+  "name": "jeom-mae-choo",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "점심 메뉴 추천 해 드립니다.",
+  "main": "dist/index.js",
+  "author": "이호연 <ho991217@kakao.com>",
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn build:tsc && yarn build:js",
+    "build:tsc": "yarn tsc --emitDeclarationOnly",
+    "build:js": "node build.js",
+    "clean": "rm -rf dist"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5"
+  }
+}
