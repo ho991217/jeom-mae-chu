@@ -23,7 +23,7 @@ function getJeomshim({ include, exclude }: GetJeomshimOptions): Food {
     }
   } else if (exclude !== undefined) {
     if (Array.isArray(exclude)) {
-      const uniqueCategories = Array.from(new Set(include));
+      const uniqueCategories = Array.from(new Set(exclude));
       const availableCategories = category.filter(
         (c) => !uniqueCategories.includes(c)
       );
